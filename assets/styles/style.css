@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    --user-photo-width: 130px;
+}
+
+.test {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.user-card {
+    display: flex;
+    width: 40%;
+    min-width: 300px;
+    border: 2px red solid;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user-photo {
+    display: flex;
+    padding: 20px;
+}
+
+.photo {
+    display: block;
+    width: var(--user-photo-width);
+    height: var(--user-photo-width);
+    object-fit: cover;
+    border-radius: 50%;
+    /* padding: 20px; */
+    border: 2px white solid;
+    box-shadow: 0px 0px 10px grey;
+}
